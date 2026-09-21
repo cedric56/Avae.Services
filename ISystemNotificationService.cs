@@ -135,12 +135,12 @@ public interface ISystemNotification
     /// instance to update an already-active notification in place (e.g.
     /// after changing <see cref="Title"/>/<see cref="Message"/>).
     /// </summary>
-    void Show();
+    Task Show();
 
     /// <summary>
     /// Closes/dismisses the notification if it's currently shown.
     /// </summary>
-    void Close();
+    Task Close();
 }
 
 /// <summary>
